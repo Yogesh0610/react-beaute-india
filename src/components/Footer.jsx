@@ -1,12 +1,13 @@
 import amazon from 'assets/pictures/Amazon Pay.png';
-import logo from 'assets/pictures/beaute-india-footer.png';
-import fb from 'assets/pictures/fb-ft.png';
-import insta from 'assets/pictures/insta-ft.png';
+import logo from 'assets/pictures/header-logo.png';
+import fb from 'assets/pictures/fb-ft.svg';
+import insta from 'assets/pictures/insta-ft.svg';
 import master from 'assets/pictures/Mastercard.png';
 import netbanking from 'assets/pictures/Netbanking.png';
 import upi from 'assets/pictures/UPI.png';
 import visa from 'assets/pictures/Visa.png';
-import wh from 'assets/pictures/wh-ft.png';
+// import logo from 'assets/pictures/header-logo.png';
+import wh from 'assets/pictures/wh-ft.svg';
 import { Link } from "react-router-dom";
 
 import { Fragment, useState } from "react";
@@ -46,7 +47,7 @@ function Footer() {
 											BEAUTE INDIA
 										</div>
 									</li>
-									<Link to="#"><li>Who we are ?</li></Link>
+									<Link to="/#"><li>Who we are ?</li></Link>
 									<Link to="#"><li>Terms & Conditions</li></Link>
 									<Link to="#"><li>We respect your privacy </li></Link>
 									<Link to="#"><li>Contact Us</li></Link>

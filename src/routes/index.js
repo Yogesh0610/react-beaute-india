@@ -7,6 +7,7 @@ import Page404 from "pages/Page404"
 import ProductDetail from "pages/ProductDetail"
 import Products from "pages/Products"
 import Signup from "pages/Signup"
+import Whower from "pages/Whower"
 
 const publicRoutes = [
     { path: "*", component: Page404 },
@@ -15,6 +16,7 @@ const publicRoutes = [
 
 const protectedRoutes = [
     { path: "/signup", component: Signup },
+    { path: "/Whower", component: Whower },
     { path: "/login", component: Login },
     { path: "/products", component: Products },
     { path: "/products/:id", component: ProductDetail },

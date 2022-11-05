@@ -205,10 +205,10 @@ const AddressForm = ({ editId, data, handleClose }) => {
 
                     <div className="submit-section">
                         <span><div className="form-check">
-                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            <label className="form-check-label" for="flexCheckDefault">
+                            {/* <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" /> */}
+                            {/* <label className="form-check-label" for="flexCheckDefault">
                                 Ship to a different address
-                            </label>
+                            </label> */}
                         </div></span>
 
                         <button type='submit' >

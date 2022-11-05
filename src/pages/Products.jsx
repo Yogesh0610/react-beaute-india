@@ -5,10 +5,11 @@ import squareView from 'assets/pictures/square-view.svg';
 
 import Footer from 'components/Footer';
 import Header from 'components/Header';
-import { ProductCard, ProductQuery, Sidebar, Slider } from 'components/products';
+import { ProductCard,ProductCardListView, ProductQuery, Sidebar, Slider } from 'components/products';
 import { useShop } from 'hooks';
 import { Fragment, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+
 
 const Products = () => {
 	const { isLoggedIn } = useShop()
@@ -70,7 +71,7 @@ const Products = () => {
 											<div className='d-flex'>
 												<p>VIEW AS</p>
 												<img className='im-1 mx-1' style={{ height: 20 }} src={squareView} alt="" />
-												<img className='im-2' style={{ height: 20 }} src={hrView} alt="" />
+												{/* <img className='im-2' style={{ height: 20 }} src={hrView} alt="" /> */}
 											</div>
 										</div>
 										<div className="box2 "><p>ITEMS PER PAGE:50</p></div>
@@ -78,8 +79,8 @@ const Products = () => {
 											<select className="form-select form-filter" aria-label="Default select example" onChange={(e) => handleNavigate(e, 'sort_by', e.target.value)}>
 												<option selected>Default Sorting</option>
 												<option value="popularity">Popularity</option>
-												<option value="low">Low</option>
-												<option value="high">High</option>
+												<option value="low">Price High to Low</option>
+												<option value="high">Price Low to High</option>
 											</select>
 										</div>
 										<div className="box4 " >

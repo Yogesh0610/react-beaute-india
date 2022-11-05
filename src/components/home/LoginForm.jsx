@@ -37,7 +37,7 @@ const LoginForm = () => {
         <Fragment>
             <FormikProvider value={formik}>
                 <form onSubmit={formik.handleSubmit}>
-                    <h1>BEAUT INDIA</h1>
+                    <h1>BEAUTE INDIA</h1>
                     <h6 className='mb-3'>LOG IN</h6>
 
                     <Field
